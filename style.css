@@ -1,0 +1,316 @@
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    box-shadow: 0px -1px 22px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.main-logo {
+    width: 60px;
+}
+
+.tittle {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.cart-value {
+    position: absolute;
+    right: 68px;
+    top: 25px;
+    font-size: 22px;
+    color: #454545;
+}
+
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+dialog{
+    padding: 20px 50px 50px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+dialog input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+dialog h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+.utilites {
+    display: flex;
+    justify-content: space-around;
+}
+
+#show-add {
+    height: 30px;
+}
+
+#show-cart {
+    z-index: 999;
+}
+
+#show-cart:hover {
+    cursor: pointer;
+}
+
+
+.items_grid {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.item {
+    width: 180px;
+}
+
+.item img {
+    width: 180px;
+}
+
+.item span {
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgba(69, 69, 69, 0.8);
+}
+
+.price {
+    font-size: 12px;
+    color: dimgray;
+}
+
+.item__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_tittle {
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.order {
+    display: flex;
+}
+
+.navigation {
+    margin: 0 auto;
+    width: 60px;
+}
+
+.navigation button{
+    width: 30px;
+    height: 30px;
+}
+
+.display {
+    margin-bottom: 50px;
+}
+.display button {
+    height: 30px;
+}
+
+.display_list {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.display_list .item {
+    width: 100%;
+    display: flex;
+}
+
+.display_list .item_tittle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.display_list img {
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.display_list span {
+    display: none;
+}
+
+.display_list .price {
+    color: black;
+    font-weight: bolder;
+    line-height: 15px;
+}
+
+.display_list .item_tittle p:after {
+    content: ', ';
+    margin-right: 10px;
+}
+
+.colors {
+    height: 20px;
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.colors div {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+.active {
+    border: 2px solid orange;
+
+}
+
+.colors div:nth-child(1) {
+    background-color: #c3c3c3;}
+.colors div:nth-child(2) {
+    background-color: red;}
+.colors div:nth-child(3) {
+    background-color: #52715a;}
+
+#cart-items {
+    padding-bottom: 25px;
+}
+
+.cart-item {
+    display: flex;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.cart-item__info {
+    display: flex;
+    align-self: center;
+    margin-left: 30px;
+}
+
+.cart-item img {
+    width: 60px;
+}
+
+.cart-item__tittle {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cart-item__tittle p{
+}
+
+.cart-item__tittle p:after {
+    content: ', ';
+    margin-right: 10px;
+}
+
+.cart-total {
+    display: block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.stock {
+    font-size: 10px;
+    color: darkgrey;
+}
+
+.main-footer {
+    border-radius: 10px;
+
+    width: 100%;
+    /*box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);*/
+    box-shadow: 0px 2px 26px rgba(0,0,0,0.75);
+
+}
+
+
+.social {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.social-item {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.social-item span{
+    margin-left: 10px;
+    color: gray;
+}
+.social-item a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#filter {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 4%;
+}
+
+#filter span{
+    text-transform: uppercase;
+    position: absolute;
+    background-color: #fff;
+    top: -9px;
+    right: 56px;
+}
+
+#filter label{
+    display: block;
+    margin-top: 10px;
+}
+
+#filter-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+

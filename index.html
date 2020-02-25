@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/028a4f9e46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="main-header">
+
+    <img src="img/icon.png" alt="" class="main-logo">
+    <h1 class="tittle">Aloe Vera</h1>
+    <a href="cart.html"><div id="show-cart">
+        <img src="img/cart.png" alt="" class="main-logo">
+        <span class="cart-value">0</span>
+    </div></a>
+
+</header>
+<dialog id="add-dialog">
+    <h2>Добавить товар</h2>
+    <label for="addImage">Ссылка на изображение</label><input type="text" id="addImage">
+    <label for="addName">Название</label><input type="text" id="addName">
+    <label for="addDesc">Описание</label><input type="text" id="addDesc">
+    <label for="addPrice">Стоимость</label><input type="text" id="addPrice">
+    <button id="add" onclick="addNewGood()">Добавить</button>
+    <button id="close-add">Закрыть</button>
+</dialog>
+    <div id="container">
+
+        <div class="utilites">
+            <button id="show-add">Добавить товар</button>
+
+            <div class="display">
+                <button id="grid">GRID</button>
+                <button id="list">LIST</button>
+                <button id="sort">SortByPrice</button>
+                <form action="#" id="filter">
+                    <span>Filter</span>
+                    <label>Min: <input id="filter-min" type="number"></label>
+                    <label>Max: <input id="filter-max" type="number"></label>
+                    <label><input id="filter-stock" type="checkbox">В наличии</label>
+                    <button id="filter-btn">Filter</button>
+                </form>
+            </div></div>
+
+
+        <div id="items" class="items_grid">
+
+        </div>
+        <div class="navigation">
+        </div>
+    </div>
+<footer class="main-footer">
+    <div class="social">
+        <div class="social-item"><i class="fab fa-telegram-plane"></i><span>Телефон(Telegram):</span> <a href="tel:+380666982372">+380666982372</a></div>
+        <div class="social-item"><i class="fas fa-envelope-open-text"></i><span>E-mail: </span><a href="mailto:testmail@gmail.com">testmail@gmail.com</a></div>
+        <div class="social-item"><i class="fab fa-instagram-square"></i> <span>Instagram: </span><a href="https://www.instagram.com/?hl=ru" class="inst">@testIngstagram</a></div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
